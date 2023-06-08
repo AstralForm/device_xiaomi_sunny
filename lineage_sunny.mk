@@ -20,11 +20,16 @@ TARGET_EXCLUDES_AUDIOFX := true
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# GApps
-WITH_GAPPS := true
+#Rising Flags 
+RISING_CHIPSET := Snapdragon 678
+RISING_MAINTAINER := XscarGOD
+RISING_PACKAGE_TYPE := "VANILLA AOSP"
+TARGET_ENABLE_BLUR := true
 
-# MicroG
-WITH_GMS := false
+#GMS Flags
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_USE_GOOGLE_TELEPHONY := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_sunny

@@ -20,16 +20,6 @@ $(call inherit-product, device/qcom/common/vendor/perf-legacy/qti-perf-legacy.mk
 # Inherit Adreno aspects
 $(call inherit-product, device/qcom/common/vendor/adreno-6xx-legacy/qti-adreno-6xx-legacy.mk)
 
-# GApps
-ifeq ($(WITH_GAPPS),true)
-$(call inherit-product, vendor/gapps/gapps_alonso.mk)
-endif
-
-# MicroG
-ifeq ($(WITH_GMS),true)
-$(call inherit-product, vendor/partner_gms/products/gms.mk)
-endif
-
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
